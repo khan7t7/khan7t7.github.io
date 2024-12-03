@@ -4,139 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Mustafa Ahmad - Full-Stack Developer, AI Expert, ERPNext Specialist.">
-    <link rel="icon" type="image/x-icon" href="docs/assets/cropped_image.png">
     <title>Mustafa Ahmad - Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="docs/assets/cropped_image.png">
 </head>
 <body>
-    <header class="bg-dark text-white py-5">
-        <div class="container text-center">
-            <img src="docs/assets/cropped_image.png" alt="Mustafa Ahmad" class="rounded-circle mb-3" width="150" height="150">
+    <!-- Hero Section -->
+    <header class="bg-dark text-white py-5 text-center">
+        <div class="container">
+            <img src="docs/assets/cropped_image.png" alt="Mustafa Ahmad" class="rounded-circle mb-3 shadow" width="150" height="150">
             <h1>Mustafa Ahmad</h1>
             <p class="lead">Full-Stack Developer | AI Developer | ERPNext Expert | System Administrator</p>
-            <nav>
-                <a href="#about" class="btn btn-outline-light mx-2">About</a>
-                <a href="#work" class="btn btn-outline-light mx-2">Work</a>
-                <a href="#projects" class="btn btn-outline-light mx-2">Projects</a>
-                <a href="#contact" class="btn btn-outline-light mx-2">Contact</a>
-            </nav>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Hire Me</a>
         </div>
     </header>
 
-    <main>
-        <!-- About Section -->
-        <section id="about" class="py-5 bg-light">
-            <div class="container text-center">
-                <h2>About Me</h2>
-                <p class="text-muted">
-                    I am a results-driven Full-Stack Developer and AI enthusiast skilled in Python, JavaScript, and frameworks like TensorFlow and PyTorch. My expertise spans ERPNext, AI model development, and cloud systems.
-                </p>
+    <!-- Image Slider -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Innovation at its Core</h2>
+            <div class="slider">
+                <div><img src="assets/innovation1.jpg" class="img-fluid" alt="Innovation 1"></div>
+                <div><img src="assets/innovation2.jpg" class="img-fluid" alt="Innovation 2"></div>
+                <div><img src="assets/innovation3.jpg" class="img-fluid" alt="Innovation 3"></div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Work Experience Section -->
-        <section id="work" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Work Experience</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Full-Stack Engineer</h5>
-                                <p class="card-text text-muted">Al Ansari Group LLC, Oman</p>
-                                <p>Oct 2023 - Present</p>
-                                <ul>
-                                    <li>Managed system administration for ERPNext Systems.</li>
-                                    <li>Integrated AI solutions to enhance business processes.</li>
-                                    <li>Developed APIs and optimized IT infrastructure.</li>
-                                </ul>
-                            </div>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <p>
+                A passionate developer with expertise in Full-Stack Development, AI, and ERP systems. With a strong foundation in Python, JavaScript, and cutting-edge technologies, I deliver scalable, efficient, and innovative solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <i class="fab fa-python fa-3x"></i>
+                    <h5 class="mt-2">Python</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h5 class="mt-2">Database Management</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fab fa-js fa-3x"></i>
+                    <h5 class="mt-2">JavaScript</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-cloud fa-3x"></i>
+                    <h5 class="mt-2">Cloud Computing</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h5>Full-Stack Engineer</h5>
+                    <p>Al Ansari Group LLC, Oman (2023 - Present)</p>
+                    <p>Led AI integrations, ERPNext development, and system optimization for enhanced productivity.</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>Python Developer Intern</h5>
+                    <p>Content Arcade Ltd, Pakistan (2022 - 2023)</p>
+                    <p>Developed APIs, implemented databases, and created web solutions using AJAX and RESTful APIs.</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>SEO Specialist</h5>
+                    <p>Software Bench Inc, Pakistan (2020 - 2021)</p>
+                    <p>Enhanced global website rankings through AI-driven SEO strategies and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">ERPNext Implementation</h5>
+                            <p>Custom modules and workflows for Al Ansari Group LLC.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Python Developer Intern</h5>
-                                <p class="card-text text-muted">Content Arcade Ltd, Pakistan</p>
-                                <p>Nov 2022 - Jan 2023</p>
-                                <ul>
-                                    <li>Developed APIs, databases, and web applications.</li>
-                                    <li>Focused on AJAX and API integrations.</li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Weapon Detection Using AI</h5>
+                            <p>YOLOv2 and CNN-powered real-time detection system.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">SEO Specialist</h5>
-                                <p class="card-text text-muted">Software Bench Inc, Pakistan</p>
-                                <p>Oct 2020 - Oct 2021</p>
-                                <ul>
-                                    <li>Optimized websites with AI-driven SEO strategies.</li>
-                                    <li>Improved global rankings for 8+ websites.</li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Online Quiz Application</h5>
+                            <p>Flask and AI-based adaptive quiz generation.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-4">Highlighted Projects</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">ERPNext Implementation</h5>
-                                <p class="card-text text-muted">Developed and optimized ERPNext systems at Al Ansari Group LLC.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Weapon Detection Using AI</h5>
-                                <p class="card-text text-muted">Built a real-time weapon detection system using YOLOv2 and CNN.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Online Quiz Application</h5>
-                                <p class="card-text text-muted">Created an adaptive quiz system with Flask and RESTful APIs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-5">
-            <div class="container text-center">
-                <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:mustaabro@gmail.com">mustaabro@gmail.com</a></p>
-                <p>Phone: (+968) 79818196</p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/khan777" target="_blank">linkedin.com/in/khan777</a></p>
-            </div>
-        </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:mustaabro@gmail.com">mustaabro@gmail.com</a></p>
+            <p>Phone: (+968) 79818196</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/khan777" target="_blank">linkedin.com/in/khan777</a></p>
+        </div>
+    </section>
 
     <footer class="bg-dark text-white text-center py-3">
-        <p>© 2024 Mustafa Ahmad | <a href="#top" class="text-white">Back to Top</a></p>
+        <p>© 2024 Mustafa Ahmad | Powered by Creativity</p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
 </body>
 </html>
