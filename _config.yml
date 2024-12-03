@@ -1,1 +1,37 @@
+# Site settings
+title: "Mustafa Ahmad - Portfolio"
+description: "Portfolio of Mustafa Ahmad - Full-Stack Developer, AI Expert, ERPNext Specialist."
+baseurl: "" # Leave blank for root of the repository
+url: "https://<your-username>.github.io" # Replace with your GitHub Pages URL
+
+# SEO settings
+author: "Mustafa Ahmad"
+email: "mustaabro@gmail.com"
+linkedin: "https://linkedin.com/in/khan777"
+
+# Theme settings
+theme: minima # Change if using a custom theme
+paginate: 5 # Number of posts per page
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files/folders from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Social links
+social_links:
+  linkedin: "https://linkedin.com/in/khan777"
+  email: "mailto:mustaabro@gmail.com"
+  github: "https://github.com/khan7t7"
 
