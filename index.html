@@ -3,70 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mustafa Ahmad - Full-Stack Developer, AI Expert, ERPNext Specialist.">
-    <title>Mustafa Ahmad</title>
+    <meta name="description" content="Portfolio of Mustafa Ahmad - Full-Stack Developer, AI Expert, ERPNext Specialist.">
+    <title>Mustafa Ahmad - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header class="bg-dark text-white py-5">
+        <div class="container text-center">
             <h1>Mustafa Ahmad</h1>
-            <p>Full-Stack Developer | AI Developer | ERPNext Expert | System Administrator</p>
+            <p class="lead">Full-Stack Developer | AI Developer | ERPNext Expert | System Administrator</p>
             <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="#about" class="btn btn-outline-light mx-2">About</a>
+                <a href="#work" class="btn btn-outline-light mx-2">Work</a>
+                <a href="#projects" class="btn btn-outline-light mx-2">Projects</a>
+                <a href="#contact" class="btn btn-outline-light mx-2">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am a results-driven Full-Stack Developer and AI enthusiast skilled in Python, JavaScript, and frameworks like TensorFlow and PyTorch. I specialize in ERPNext solutions and cloud-based systems.</p>
+        <!-- About Section -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="mb-4">About Me</h2>
+                <p class="text-muted">
+                    I am a results-driven Full-Stack Developer and AI enthusiast skilled in Python, JavaScript, and frameworks like TensorFlow and PyTorch. I specialize in ERPNext solutions and cloud-based systems, delivering innovative solutions that drive efficiency.
+                </p>
             </div>
         </section>
 
-        <section id="work" class="section">
+        <!-- Work Experience Section -->
+        <section id="work" class="py-5">
             <div class="container">
-                <h2>Work Experience</h2>
-                <ul>
-                    <li><strong>Full-Stack Engineer</strong> - Al Ansari Group LLC, Oman (2023-Present)</li>
-                    <li><strong>Python Developer Intern</strong> - Content Arcade Ltd (2022-2023)</li>
-                    <li><strong>SEO Specialist</strong> - Software Bench Inc (2020-2021)</li>
-                </ul>
+                <h2 class="text-center mb-4">Work Experience</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Full-Stack Engineer</h5>
+                                <p class="card-text text-muted">Al Ansari Group LLC, Oman</p>
+                                <p><strong>2023 - Present</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Python Developer Intern</h5>
+                                <p class="card-text text-muted">Content Arcade Ltd, Pakistan</p>
+                                <p><strong>2022 - 2023</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">SEO Specialist</h5>
+                                <p class="card-text text-muted">Software Bench Inc, Pakistan</p>
+                                <p><strong>2020 - 2021</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>My Projects</h2>
-                <ul>
-                    <li><strong>ERPNext Implementation:</strong> Optimized ERPNext systems at Al Ansari Group LLC.</li>
-                    <li><strong>Weapon Detection Using AI/ML:</strong> Developed a real-time weapon detection system using YOLOv2 and CNN.</li>
-                    <li><strong>Online Quiz Application:</strong> Built an adaptive quiz system with Flask and RESTful APIs.</li>
-                </ul>
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="mb-4">Highlighted Projects</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">ERPNext Implementation</h5>
+                                <p class="card-text text-muted">Optimized ERPNext systems at Al Ansari Group LLC.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Weapon Detection Using AI</h5>
+                                <p class="card-text text-muted">Developed a real-time weapon detection system using YOLOv2 and CNN.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Online Quiz Application</h5>
+                                <p class="card-text text-muted">Built an adaptive quiz system with Flask and RESTful APIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <div class="container">
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container text-center">
                 <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:mustaffabro@gmail.com">mustaabro@gmail.com</a></p>
+                <p>Email: <a href="mailto:mustaabro@gmail.com">mustaabro@gmail.com</a></p>
                 <p>Phone: (+968) 79818196</p>
                 <p>LinkedIn: <a href="https://linkedin.com/in/khan777" target="_blank">linkedin.com/in/khan777</a></p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Mustafa Ahmad</p>
-        </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Mustafa Ahmad | <a href="#top" class="text-white">Back to Top</a></p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
