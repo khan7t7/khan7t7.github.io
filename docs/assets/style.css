@@ -431,25 +431,16 @@
 
         /* FOR PROJECT */
 
-        .hover-effect {
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        .hover-effect:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .card {
-            background-color: #f7f7f7;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        .card:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+        .card-footer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a2e;
         }
 
         canvas {
-            border-radius: 10px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #1a1a2e 0%, #162447 100%);
         }
