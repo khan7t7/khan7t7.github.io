@@ -253,13 +253,15 @@
         <div class="container">
             <h2 class="text-center mb-4 display-5 fw-bold text-white">Projects Highlights</h2>
             <div class="row">
+
                 <!-- ERPNext Implementation -->
                 <div class="col-md-4">
                     <div class="card shadow-lg border-0 rounded-3">
                         <div class="card-body">
                             <h5 class="card-title text-primary">ERPNext Implementation</h5>
                             <p class="card-text">Developed custom modules and workflows for <strong>Al Ansari Group
-                                    LLC</strong>, streamlining business operations and improving overall efficiency.</p>
+                                    LLC</strong>,
+                                streamlining business operations and improving overall efficiency.</p>
                             <div class="card-info">
                                 <div class="info-item">
                                     <i class="fas fa-code"></i>
@@ -310,8 +312,8 @@
                     <div class="card shadow-lg border-0 rounded-3">
                         <div class="card-body">
                             <h5 class="card-title text-info">AI-Powered Online Quiz Application</h5>
-                            <p class="card-text">Built an adaptive quiz platform using Flask and AI, offering
-                                personalized quizzes based on user performance.</p>
+                            <p class="card-text">Built an adaptive quiz platform using Flask and AI,
+                                offering personalized quizzes based on user performance.</p>
                             <div class="card-info">
                                 <div class="info-item">
                                     <i class="fas fa-code"></i>
@@ -330,6 +332,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -525,39 +528,69 @@
 
         // for project
 
-        $(document).ready(function () {
-            // Create vortex lines
-            function createVortex(canvas, x, y, radius, speed) {
-                var ctx = canvas.getContext('2d');
-                var points = [];
-                for (var i = 0; i < 100; i++) {
-                    var angle = Math.PI * 2 * i / 100;
-                    var point = {
-                        x: x + Math.cos(angle) * radius,
-                        y: y + Math.sin(angle) * radius
-                    };
-                    points.push(point);
-                }
-                function animate() {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    ctx.beginPath();
-                    ctx.moveTo(points[0].x, points[0].y);
-                    for (var i = 1; i < points.length; i++) {
-                        var point = points[i];
-                        point.x += Math.cos(Math.PI * 2 * i / 100) * speed;
-                        point.y += Math.sin(Math.PI * 2 * i / 100) * speed;
-                        ctx.lineTo(point.x, point.y);
-                    }
-                    ctx.stroke();
-                    requestAnimationFrame(animate);
-                }
-                animate();
+       class VortexAnimation {
+            constructor(canvasId) {
+                this.canvas = document.getElementById(canvasId);
+                this.ctx = this.canvas.getContext('2d');
+                this.particles = [];
+                this.width = this.canvas.width;
+                this.height = this.canvas.height;
+                this.initialize();
             }
 
-            // Create vortex lines
-            createVortex(document.getElementById('vortex-1'), 100, 100, 50, 2);
-            createVortex(document.getElementById('vortex-2'), 100, 100, 50, 3);
-            createVortex(document.getElementById('vortex-3'), 100, 100, 50, 4);
+            initialize() {
+                // Create particles
+                for (let i = 0; i < 100; i++) {
+                    this.particles.push(this.createParticle());
+                }
+                this.animate();
+            }
+
+            createParticle() {
+                return {
+                    x: Math.random() * this.width,
+                    y: Math.random() * this.height,
+                    radius: Math.random() * 3 + 1,
+                    color: `hsl(${Math.random() * 360}, 80%, 60%)`,
+                    speedX: (Math.random() - 0.5) * 2,
+                    speedY: (Math.random() - 0.5) * 2,
+                    angle: Math.random() * 2 * Math.PI
+                };
+            }
+
+            drawParticle(particle) {
+                this.ctx.beginPath();
+                this.ctx.arc(particle.x, particle.y, particle.radius, 0, 2 * Math.PI);
+                this.ctx.fillStyle = particle.color;
+                this.ctx.fill();
+            }
+
+            updateParticle(particle) {
+                particle.x += particle.speedX + Math.sin(particle.angle) * 0.5;
+                particle.y += particle.speedY + Math.cos(particle.angle) * 0.5;
+                particle.angle += 0.02;
+
+                if (particle.x < 0) particle.x = this.width;
+                if (particle.x > this.width) particle.x = 0;
+                if (particle.y < 0) particle.y = this.height;
+                if (particle.y > this.height) particle.y = 0;
+            }
+
+            animate() {
+                this.ctx.clearRect(0, 0, this.width, this.height);
+                this.particles.forEach(particle => {
+                    this.updateParticle(particle);
+                    this.drawParticle(particle);
+                });
+                requestAnimationFrame(this.animate.bind(this));
+            }
+        }
+
+        // Apply the animation to each canvas
+        window.addEventListener('load', () => {
+            new VortexAnimation('vortex-1');
+            new VortexAnimation('vortex-2');
+            new VortexAnimation('vortex-3');
         });
 
     </script>
