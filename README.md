@@ -1,19 +1,18 @@
 # Mustafa Ahmad - Portfolio
 
-Welcome to my personal portfolio! This repository contains the source code for my website hosted on [GitHub Pages](https://<your-username>.github.io/).
-
-## About Me
+Welcome to my personal portfolio! This repository contains the source code for my website hosted on [GitHub Pages](https://khan7t7.github.io/).
 
 I am Mustafa Ahmad, a **Full-Stack Developer**, **Generative AI Developer**, and **ERPNext Expert** with a strong background in system administration and AI-driven solutions. My expertise includes:
+
+# 💫 About Me:
+Results-driven full-stack developer with a passion for AI. Skilled in crafting<br>innovative solutions using Python, JavaScript, C++, and AI frameworks (TensorFlow,<br>PyTorch, Hugging Face). Proven expertise in designing, developing, and deploying<br>generative AI models, RESTful APIs, and cloud-based services. Strong background in<br>ERP systems (especially ERPNext), enabling seamless integration of AI solutions into<br>business processes. Committed to delivering scalable, efficient, and ethically<br>responsible AI applications that drive operational efficiency and growth.
+
 
 - **Programming Languages:** Python, JavaScript, C++
 - **AI Frameworks:** TensorFlow, PyTorch, Hugging Face
 - **ERP Systems:** ERPNext, Frappe Framework
 - **Database Management:** MariaDB, Oracle
 - **Web Development:** HTML, CSS, Bootstrap, RESTful APIs
-
-# 💫 About Me:
-Results-driven full-stack developer with a passion for AI. Skilled in crafting<br>innovative solutions using Python, JavaScript, C++, and AI frameworks (TensorFlow,<br>PyTorch, Hugging Face). Proven expertise in designing, developing, and deploying<br>generative AI models, RESTful APIs, and cloud-based services. Strong background in<br>ERP systems (especially ERPNext), enabling seamless integration of AI solutions into<br>business processes. Committed to delivering scalable, efficient, and ethically<br>responsible AI applications that drive operational efficiency and growth.
 
 
 ## 🌐 Socials:
