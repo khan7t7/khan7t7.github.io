@@ -1,4 +1,4 @@
-   * {
+     * {
             font-family: 'JetBrains Mono', 'Open Sans', sans-serif;
         }
 
@@ -245,7 +245,7 @@
             align-items: center;
             border-radius: 50%;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
+            transition: transform .8s ease-in-out;
         }
 
         .timeline-icon:hover {
@@ -305,9 +305,9 @@
 
         /* Line animation */
         line {
-            stroke-dasharray: 8;
-            stroke-width: 4;
-            animation: dash 3s linear infinite;
+            stroke-dasharray: 10;
+            stroke-width: 5;
+            animation: dash 10s linear infinite;
         }
 
         @keyframes dash {
@@ -434,15 +434,6 @@
             border-radius: 2px;
         }
 
-        .skill-card {
-            background: white;
-            border-radius: 1rem;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-
         .skill-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -455,7 +446,7 @@
 
         .progress-bar-custom {
             height: 6px;
-            background: #e9ecef;
+            background: #e0e5ea;
             border-radius: 3px;
             overflow: hidden;
             margin-top: 1rem;
@@ -480,7 +471,13 @@
         }
 
         .skill-card {
-            animation: fadeInUp 0.6s ease-out forwards;
+            background: rgba(200, 202, 255, 0.5); /* Adjust the alpha value (0.8) for transparency */
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    animation: fadeInUp 5s ease-out forwards;
         }
 
 
@@ -499,3 +496,137 @@
             border-radius: 50%;
             background: radial-gradient(circle, #1a1a2e 0%, #162447 100%);
         }
+
+
+    /* for skill         */
+/* Base styles for background container */
+.space-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #0a192f, #112240);
+    z-index: 0; /* Ensure background is behind */
+}
+
+ #skills-container {
+
+            position: relative; /* Important for z-index to work */
+            z-index: 1;          /* Ensure skills are on top */
+        }
+        .skills-section{
+            position: relative;
+        }
+
+ .category-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            /* Remove the color property here */
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .category-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #007bff; /* Or set a default color */
+            border-radius: 2px;
+        }
+
+
+
+/* Rockets */
+.rocket {
+    position: absolute;
+    animation: rocketFly linear infinite;
+}
+
+.rocket-small { font-size: 16px; }
+.rocket-medium { font-size: 24px; }
+.rocket-large { font-size: 32px; }
+
+.rocket::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background: linear-gradient(to left, transparent, #ff6b6b);
+    border-radius: 2px;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rocket-small::after { width: 15px; }
+.rocket-medium::after { width: 25px; }
+.rocket-large::after { width: 35px; }
+
+/* Binary rain */
+.binary {
+    position: absolute;
+    color: rgba(0, 255, 0, 0.1);
+    font-family: monospace;
+    white-space: nowrap;
+    animation: rain linear infinite;
+}
+
+/* Tech symbols */
+.tech-symbol {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    font-family: monospace;
+    animation: float ease-in-out infinite;
+}
+
+/* Bubbles */
+.bubble {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float ease-in-out infinite;
+}
+
+/* Grid lines */
+.grid-line {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    animation: gridPulse ease-in-out infinite;
+}
+
+/* Stars */
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle ease-in-out infinite;
+}
+
+/* Animation keyframes */
+@keyframes rocketFly {
+    0% { transform: translate(-100px, 100vh) rotate(45deg); }
+    100% { transform: translate(100vw, -100px) rotate(45deg); }
+}
+
+@keyframes rain {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes gridPulse {
+    0%, 100% { opacity: 0.05; }
+    50% { opacity: 0.1; }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.2; transform: scale(0.8); }
+}
